@@ -75,15 +75,13 @@ $(document).ready(function() {
         $('.humidity').html((weatherData.currently.humidity * 100).toFixed(0));
         $('.windSpeed').html((weatherData.currently.windSpeed / 0.6213).toFixed(1));
 
-        $('.todaySummary').html(weatherData.hourly.summary);
+
         $('.tempMin').html((weatherData.daily.data[0].temperatureMin).toFixed(1) + ' °C');
         $('.tempMax').html((weatherData.daily.data[0].temperatureMax).toFixed(1) + ' °C');
 
-        $('.cloudCover').text((weatherData.currently.cloudCover * 100).toFixed(1) + ' %');
-        $('.dewPoint').text(weatherData.currently.dewPoint + ' °F');
 
         // Cargar info de pronóstico semanal en HTML
-        $('.weekDaysSummary').text(weatherData.daily.summary);
+        // $('.weekDaysSummary').text(weatherData.daily.summary);
         // var skycons = new Skycons({'color': 'white'});
 
         for (i = 1; i < 7; i++) {
@@ -95,7 +93,6 @@ $(document).ready(function() {
           $('.weekDaySummary' + i).text(weatherData.daily.data[i].summary);
           $('.weekDayWind' + i).text((weatherData.daily.data[i].windSpeed / 0.6213).toFixed(2));
           $('.weekDayHumid' + i).text((weatherData.daily.data[i].humidity * 100).toFixed(0));
-          $('.weekDayCloud' + i).text((weatherData.daily.data[i].cloudCover * 100).toFixed(0));
         }
 
         // Covertir entre Celcius y Farenheight
