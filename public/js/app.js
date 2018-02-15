@@ -1,22 +1,22 @@
 let btnUbication = document.querySelector('.btn-success');
-let sectionWeatherUbication = document.querySelector('.result-weather-ubication');
-let btnWeatherWeekend = document.querySelector('.btn-weekend');
-let sectionWeatherWeekend = document.querySelector('.resul-weather-weekend');
-let btnBack = document.querySelector('.btn-back');
+let sectionWeatherUbication = document.querySelector('.justify-content-around');
+// let btnWeatherWeekend = document.querySelector('.btn-weekend');
+let sectionWeatherWeekend = document.querySelector('.weekRows');
+// let btnBack = document.querySelector('.btn-back');
 
 btnUbication.addEventListener('click', function() {
-  sectionWeatherUbication.removeAttribute('hidden', 'hidden');
+  sectionWeatherUbication.setAttribute('hidden', 'hidden');
 });
 
-btnWeatherWeekend.addEventListener('click', function() {
-  sectionWeatherUbication.setAttribute('hidden', 'hidden');
-  sectionWeatherWeekend.removeAttribute('hidden', 'hidden');
-});
+// btnWeatherWeekend.addEventListener('click', function() {
+//   sectionWeatherUbication.setAttribute('hidden', 'hidden');
+//   sectionWeatherWeekend.removeAttribute('hidden', 'hidden');
+// });
 
-btnBack.addEventListener('click', function() {
-  sectionWeatherUbication.setAttribute('hidden', 'hidden');
-  sectionWeatherWeekend.setAttribute('hidden', 'hidden');
-});
+// btnBack.addEventListener('click', function() {
+//   sectionWeatherUbication.setAttribute('hidden', 'hidden');
+//   sectionWeatherWeekend.setAttribute('hidden', 'hidden');
+// });
 
 $(document).ready(function() {
   // Variables de ubicación, temperatura y tiempos
