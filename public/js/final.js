@@ -1,25 +1,3 @@
-
-let btnUbication = document.querySelector('.btn-week');
-let sectionWeatherUbication = document.querySelector('.justify-content-around');
-// // let btnWeatherWeekend = document.querySelector('.btn-weekend');
-let sectionWeatherWeekend = document.querySelector('#weeklyForecast');
-let btnBack = document.querySelector('.btn-back');
-
-btnUbication.addEventListener('click', function() {
-  sectionWeatherUbication.setAttribute('hidden', 'hidden');
-  sectionWeatherWeekend.removeAttribute('hidden', 'hidden');
-});
-
-// btnWeatherWeekend.addEventListener('click', function() {
-//   sectionWeatherUbication.setAttribute('hidden', 'hidden');
-//   sectionWeatherWeekend.removeAttribute('hidden', 'hidden');
-// });
-
-btnBack.addEventListener('click', function() {
-  sectionWeatherUbication.removeAttribute('hidden', 'hidden');
-  sectionWeatherWeekend.setAttribute('hidden', 'hidden');
-});
-
 $(document).ready(function() {
   // Variables de ubicación, temperatura y tiempos
   var lat;
@@ -69,7 +47,7 @@ $(document).ready(function() {
       dataType: 'jsonp',
       success: function(weatherData) {
       // Obtener toda la info de JSON y añadirla a HTML
-        $('.currentTemp').html((weatherData.currently.temperature).toFixed(1));
+        $('#temperature').text((weatherData.currently.temperature).toFixed(1));
         $('.weatherCondition').html(weatherData.currently.summary);
         $('.feelsLike').html((weatherData.currently.apparentTemperature).toFixed(1) + ' °C');
         $('.humidity').html((weatherData.currently.humidity * 100).toFixed(0));
@@ -82,9 +60,18 @@ $(document).ready(function() {
         $('.cloudCover').text((weatherData.currently.cloudCover * 100).toFixed(1) + ' %');
         $('.dewPoint').text(weatherData.currently.dewPoint + ' °F');
 
+        // // Converting UNIX time
+        // unixToTime(weatherData.daily.data[0].sunriseTime);
+        // var sunriseTimeFormatted = timeFormatted + ' AM';
+        // $('.sunriseTime').text(sunriseTimeFormatted);
+        //
+        // unixToTime(weatherData.daily.data[0].sunsetTime);
+        // var sunsetTimeFormatted = timeFormatted + ' PM';
+        // $('.sunsetTime').text(sunsetTimeFormatted);
+
         // Cargar info de pronóstico semanal en HTML
         $('.weekDaysSummary').text(weatherData.daily.summary);
-        // var skycons = new Skycons({'color': 'white'});
+        var skycons = new Skycons({'color': 'white'});
 
         for (i = 1; i < 7; i++) {
           $('.weekDayTempMax' + i).text(weatherData.daily.data[i].temperatureMax);
@@ -96,7 +83,13 @@ $(document).ready(function() {
           $('.weekDayWind' + i).text((weatherData.daily.data[i].windSpeed / 0.6213).toFixed(2));
           $('.weekDayHumid' + i).text((weatherData.daily.data[i].humidity * 100).toFixed(0));
           $('.weekDayCloud' + i).text((weatherData.daily.data[i].cloudCover * 100).toFixed(0));
+          skycons.set('weatherIcon' + i, weatherData.daily.data[i].icon);
         }
+
+        // Íconos de Skycon
+        skycons.set('weatherIcon', weatherData.currently.icon);
+        skycons.set('expectIcon', weatherData.hourly.icon);
+        skycons.play();
 
         // Covertir entre Celcius y Farenheight
         tempInF = ((weatherData.currently.temperature * 9 / 5) + 32).toFixed(1);
@@ -162,4 +155,25 @@ $(document).ready(function() {
 
   // Inicializar wow.js
   new WOW().init();
+
+  // AURORA
+  let btnUbication = document.querySelector('.btn-success');
+  let sectionWeatherUbication = document.querySelector('.result-weather-ubication');
+  let btnWeatherWeekend = document.querySelector('.btn-weekend');
+  let sectionWeatherWeekend = document.querySelector('.resul-weather-weekend');
+  let btnBack = document.querySelector('.btn-back');
+
+  btnUbication.addEventListener('click', function() {
+    sectionWeatherUbication.removeAttribute('hidden', 'hidden');
+  });
+
+  btnWeatherWeekend.addEventListener('click', function() {
+    sectionWeatherUbication.setAttribute('hidden', 'hidden');
+    sectionWeatherWeekend.removeAttribute('hidden', 'hidden');
+  });
+
+  btnBack.addEventListener('click', function() {
+    sectionWeatherUbication.setAttribute('hidden', 'hidden');
+    sectionWeatherWeekend.setAttribute('hidden', 'hidden');
+  });
 });
