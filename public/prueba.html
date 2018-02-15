@@ -13,7 +13,7 @@
     <!-- link de googlefonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Acme|Righteous" rel="stylesheet"> -->
     <!-- link main CSS -->
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/main.css">
     <!-- Título de pestaña -->
     <title>Forecast</title>
   </head>
@@ -27,39 +27,36 @@
       <section id="dailyForecast">
       <div class="container">
 
-      <div class="row justify-content-around">
-      <div class="col-10 col-lg-5 tempBox text-center">
-  <p><span class="locName">Your Location Here</span></p>
-  <p class="m0"><span class="weatherCondition">...</span></p>
-  <p class="m0"><span class="currentTemp"></span><span class="unit">°C</span></p>
-  <p class="feels"><i class="wi wi-barometer"></i> Feels Like: <span class="feelsLike">...</span></p>
-  <div class="row tempBoxSubInfo">
-    <div class="col">
-      <p><i class="wi wi-windy"></i>
-        Wind Speed: <span class="windSpeed">...</span> km/s
-      </p>
-    </div>
-    <div class="col">
-      <p><i class="wi wi-humidity"></i>
-        Humidity: <span class="humidity">...</span> %
-      </p>
+        <div class="row justify-content-around">
+        <div class="col-10 col-lg-5 tempBox text-center">
+          <p><span class="locName">Your Location Here</span></p>
+          <p class="m0"><span class="weatherCondition">...</span></p>
+          <p class="m0"><span class="currentTemp"></span><span class="unit">°C</span></p>
+          <p class="feels"><i class="wi wi-barometer"></i> Feels Like: <span class="feelsLike">...</span></p>
+        <div class="row tempBoxSubInfo">
+          <div class="col">
+            <p><i class="wi wi-windy"></i>
+            Wind Speed: <span class="windSpeed">...</span> km/s
+           </p>
+          </div>
+          <div class="col">
+            <p><i class="wi wi-humidity"></i>
+              Humidity: <span class="humidity">...</span> %
+            </p>
+          </div>
+          <div class="col-12">
+            <button class="btn-success btn-week">Check the week forecast</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
-</div>
 </section>
 
-<section id="weeklyForecast">
+<section id="weeklyForecast" hidden>
 <div class="container">
-<div class="row justify-content-center">
-<div class="col-10 text-center">
-  <h3>Next Six Days: <span class="weekDaysSummary"></span></h3>
-</div>
-</div>
 
-<div class="row justify-content-around weekRows">
+<div class="row justify-content-around weekRows week-forecast">
 <div class="col-10 col-lg-5 dayCard text-center wow fadeInUp"  data-wow-delay="0.2s">
   <div class="row">
     <div class="col-5">
@@ -270,18 +267,22 @@
           <p><i class="wi wi-humidity"></i> <span class="weekDayHumid6"></span>%</p>
         </div>
       </div>
+      
+    </div>
+    <div class="row">
+      <button class="btn-back btn btn-success form-control">Back</button>
     </div>
   </div>
 </div>
 </div>
 </div>
-</section>
 
+</section>
 
     </main>
 
     <footer>
-      <p class="text-center">Copyright&copy;</p>
+      <p class="text-center ">Copyright&copy;</p>
     </footer>
 
 
