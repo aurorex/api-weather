@@ -19,20 +19,60 @@
   </head>
   <body>
     <header>
-      <nav>
-
-      </nav>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>Dark Sky Weather</h1>
+          </div>
+          <div class="col-12 ubication">
+            <button class="btn-success">Lugar de Ubicación</button>
+          </div>
+        </div>
+      </div>
     </header>
+    
 
     <main>
       <section>
+        <div class="container">
+          <div class="row result-weather-ubication" hidden>
+            <div class="col-12 weather">
+              <div id="image"></div>
+              <span id="temperature">%</span>
+            </div>
+            <div class="col-12 weather-description">
+              <p>Wind: <span class="float-right">1</span></p>
+              <p>Humidity: <span class="float-right">2</span></p>
+              <p>UV index: <span class="float-right">3</span></p>
+              <p>Pressure: <span class="float-right">4</span></p>
+            </div>
+            <div class="col-12">
+              <button class="form-control btn-weekend"><strong>Predicción de la semana</strong></button>
+            </div>
+
+          </div>
+          <div class="row resul-weather-weekend" hidden>
+            <div class="col-12">
+              <p><i></i>Monday <span class="float-rigth"></span></p>
+              <p><i></i>Tuesday <span class="float-rigth"></span></p>
+              <p><i></i>Wednesday <span class="float-rigth"></span></p>
+              <p><i></i>Thursday <span class="float-rigth"></span></p>
+              <p><i></i>Friday <span class="float-rigth"></span></p>
+              <p><i></i>Saturday <span class="float-rigth"></span></p>
+              <p><i></i>Sunday <span class="float-rigth"></span></p>
+            </div>
+            <div class="col-12">
+              <button class="form-control btn-back"><strong>Regresar</strong> </button>
+            </div>
+          </div>
+        </div>
 
       </section>
     </main>
-
+    <br>
+    <br>
     <footer>
-      <p class="text-center">Copyright&copy;</p>
+      <p class="text-center"><strong>Copyright&copy;</strong></p>
     </footer>
 
 
