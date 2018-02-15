@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/LizbethFP/api-weather#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "node-fetch": "^2.0.0"
   }
 }
