@@ -60,7 +60,7 @@ $(document).ready(function() {
   }
 
   function getWeather() {
-  // Revisar el clima de API Darkskies con la latitud y longitud de usuario
+  // Revisar el clima de API Darksky con la latitud y longitud de usuario
     var weatherApiKey = 'bfb97796a5bb08eff53b85624593a6fa';
     var weatherApiCall = 'https://api.darksky.net/forecast/' + weatherApiKey + '/' + lat + ',' + lon + '?units=si';
     $.ajax({

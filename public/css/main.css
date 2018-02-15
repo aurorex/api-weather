@@ -1,39 +1,39 @@
-body{
+body {
   background-image: url(../assets/images/fondo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
-h1{
+h1 {
   color: rgb(83, 63, 63);
   font-size: 50px;
   margin: 5px 0;
 }
-.justify-content-around, .resul-weather-weekend{
+
+.justify-content-around, .resul-weather-weekend {
   background-color: rgba(25, 19, 11, 0.6);
   padding: 10px;
   color: aliceblue;
   font-weight: 5px;
 }
-.weather, .ubication{
+.weather, .ubication {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 50px 0;
 }
 
-.btn-success{
+.btn-success {
   padding: 10px;
   border-radius: 5px;
 }
 
-.result-weather-ubication button, .resul-weather-weekend button{
+.result-weather-ubication button, .resul-weather-weekend button {
   border: 1px solid orangered;
   background-color: rgba(234, 246, 236, 0.6);
   color: rgb(19, 15, 14);
 }
 
-footer p{
+footer p {
   color: rgb(16, 18, 19);
 }
