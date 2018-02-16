@@ -74,7 +74,8 @@ $(document).ready(function() {
         $('.feelsLike').html((weatherData.currently.apparentTemperature).toFixed(1) + ' °C');
         $('.humidity').html((weatherData.currently.humidity * 100).toFixed(0));
         $('.windSpeed').html((weatherData.currently.windSpeed / 0.6213).toFixed(1));
-
+        $('.uv-index').html((weatherData.currently.uvIndex));
+        $('.pressure').html((weatherData.currently.pressure).toFixed(0));
 
         $('.tempMin').html((weatherData.daily.data[0].temperatureMin).toFixed(1) + ' °C');
         $('.tempMax').html((weatherData.daily.data[0].temperatureMax).toFixed(1) + ' °C');

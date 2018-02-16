@@ -25,9 +25,9 @@
 
         <div class="row justify-content-around">
         <div class="col-10 col-lg-5 tempBox text-center">
-          <p><span class="locName">Your Location Here</span></p>
+          <p class="font-weight-bold"><span class="locName">Your Location Here</span></p>
           <p class="m0"><span class="weatherCondition">...</span></p>
-          <p class="m0"><span class="currentTemp"></span><span class="unit">°C</span></p>
+          <p class="m0 font-weight-bold"><span class="currentTemp"></span><span class="unit">°C</span></p>
           <p class="feels"><i class="wi wi-barometer"></i> Feels Like: <span class="feelsLike">...</span></p>
         <div class="row tempBoxSubInfo">
           <div class="col">
@@ -40,9 +40,21 @@
               Humidity: <span class="humidity">...</span> %
             </p>
           </div>
-          <div class="col-12">
-            <button class="btn-success btn-week">Check the week forecast</button>
+        </div>
+        <div class="row tempBoxSubInfo">
+          <div class="col">
+            <p><i class="wi wi-uvindex"></i>
+            UV index: <span class="uv-index">...</span>
+           </p>
           </div>
+          <div class="col">
+            <p><i class="wi wi-pressure"></i>
+              Pressure: <span class="pressure">...</span>
+            hPa</p>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn-success btn-week">Check out the week forecast</button>
         </div>
       </div>
     </div>
@@ -64,7 +76,7 @@
     <div class="col-7">
       <div class="row">
         <div class="col-12 weekDay">
-          <p class="weekDayName1">Day</p>
+          <p class="weekDayName1 font-weight-bold">Day</p>
         </div>
       </div>
       <div class="row">
@@ -74,14 +86,14 @@
       </div>
       <div class="row">
         <div class="col-12 weekDaySun">
-          <p><i class="wi wi-sunrise"></i> <span class="weekDaySunrise1"></span> AM</p>
-          <p><i class="wi wi-sunset"></i> <span class="weekDaySunset1"></span> PM</p>
+          <p>Sunrise:<i class="wi wi-sunrise"></i> <span class="weekDaySunrise1"></span> AM</p>
+          <p>Sunset:<i class="wi wi-sunset"></i> <span class="weekDaySunset1"></span> PM</p>
         </div>
       </div>
       <div class="row">
         <div class="col weekDayWindnHumidity">
-          <p><i class="wi wi-windy"></i> <span class="weekDayWind1"></span> km/s</p>
-          <p><i class="wi wi-humidity"></i> <span class="weekDayHumid1"></span>%</p>
+          <p>Wind Speed:<i class="wi wi-windy"></i> <span class="weekDayWind1"></span> km/s</p>
+          <p>Humidity:<i class="wi wi-humidity"></i> <span class="weekDayHumid1"></span>%</p>
         </div>
       </div>
     </div>
@@ -99,7 +111,7 @@
     <div class="col-7">
       <div class="row">
         <div class="col-12 weekDay">
-          <p class="weekDayName2">Day</p>
+          <p class="weekDayName2 font-weight-bold">Day</p>
         </div>
       </div>
       <div class="row">
@@ -109,14 +121,14 @@
       </div>
       <div class="row">
         <div class="col-12 weekDaySun">
-          <p><i class="wi wi-sunrise"></i> <span class="weekDaySunrise2"></span> AM</p>
-          <p><i class="wi wi-sunset"></i> <span class="weekDaySunset2"></span> PM</p>
+          <p>Sunrise:<i class="wi wi-sunrise"></i> <span class="weekDaySunrise2"></span> AM</p>
+          <p>Sunset:<i class="wi wi-sunset"></i> <span class="weekDaySunset2"></span> PM</p>
         </div>
       </div>
       <div class="row">
         <div class="col weekDayWindnHumidity">
-          <p><i class="wi wi-windy"></i> <span class="weekDayWind2"></span> km/s</p>
-          <p><i class="wi wi-humidity"></i> <span class="weekDayHumid2"></span>%</p>
+          <p>Wind Speed:<i class="wi wi-windy"></i> <span class="weekDayWind2"></span> km/s</p>
+          <p>Humidity:<i class="wi wi-humidity"></i> <span class="weekDayHumid2"></span>%</p>
         </div>
       </div>
     </div>
@@ -136,7 +148,7 @@
     <div class="col-7">
       <div class="row">
         <div class="col-12 weekDay">
-          <p class="weekDayName3">Day</p>
+          <p class="weekDayName3 font-weight-bold">Day</p>
         </div>
       </div>
       <div class="row">
@@ -146,14 +158,14 @@
       </div>
       <div class="row">
         <div class="col-12 weekDaySun">
-          <p><i class="wi wi-sunrise"></i> <span class="weekDaySunrise3"></span> AM</p>
-          <p><i class="wi wi-sunset"></i> <span class="weekDaySunset3"></span> PM</p>
+          <p>Sunrise:<i class="wi wi-sunrise"></i> <span class="weekDaySunrise3"></span> AM</p>
+          <p>Sunset:<i class="wi wi-sunset"></i> <span class="weekDaySunset3"></span> PM</p>
         </div>
       </div>
       <div class="row">
         <div class="col weekDayWindnHumidity">
-          <p><i class="wi wi-windy"></i> <span class="weekDayWind3"></span> km/s</p>
-          <p><i class="wi wi-humidity"></i> <span class="weekDayHumid3"></span>%</p>
+          <p>Wind Speed:<i class="wi wi-windy"></i> <span class="weekDayWind3"></span> km/s</p>
+          <p>Humidity:<i class="wi wi-humidity"></i> <span class="weekDayHumid3"></span>%</p>
         </div>
       </div>
     </div>
@@ -171,7 +183,7 @@
     <div class="col-7">
       <div class="row">
         <div class="col-12 weekDay">
-          <p class="weekDayName4">Day</p>
+          <p class="weekDayName4 font-weight-bold">Day</p>
         </div>
       </div>
       <div class="row">
@@ -181,14 +193,14 @@
       </div>
       <div class="row">
         <div class="col-12 weekDaySun">
-          <p><i class="wi wi-sunrise"></i> <span class="weekDaySunrise4"></span> AM</p>
-          <p><i class="wi wi-sunset"></i> <span class="weekDaySunset4"></span> PM</p>
+          <p>Sunrise:<i class="wi wi-sunrise"></i> <span class="weekDaySunrise4"></span> AM</p>
+          <p>Sunset:<i class="wi wi-sunset"></i> <span class="weekDaySunset4"></span> PM</p>
         </div>
       </div>
       <div class="row">
         <div class="col weekDayWindnHumidity">
-          <p><i class="wi wi-windy"></i> <span class="weekDayWind4"></span> km/s</p>
-          <p><i class="wi wi-humidity"></i> <span class="weekDayHumid4"></span>%</p>
+          <p>Wind Speed:<i class="wi wi-windy"></i> <span class="weekDayWind4"></span> km/s</p>
+          <p>Humidity:<i class="wi wi-humidity"></i> <span class="weekDayHumid4"></span>%</p>
         </div>
       </div>
     </div>
@@ -208,7 +220,7 @@
     <div class="col-7">
       <div class="row">
         <div class="col-12 weekDay">
-          <p class="weekDayName5">Day</p>
+          <p class="weekDayName5 font-weight-bold">Day</p>
         </div>
       </div>
       <div class="row">
@@ -218,14 +230,14 @@
       </div>
       <div class="row">
         <div class="col-12 weekDaySun">
-          <p><i class="wi wi-sunrise"></i> <span class="weekDaySunrise5"></span> AM</p>
-          <p><i class="wi wi-sunset"></i> <span class="weekDaySunset5"></span> PM</p>
+          <p>Sunrise:<i class="wi wi-sunrise"></i> <span class="weekDaySunrise5"></span> AM</p>
+          <p>Sunset:<i class="wi wi-sunset"></i> <span class="weekDaySunset5"></span> PM</p>
         </div>
       </div>
       <div class="row">
         <div class="col weekDayWindnHumidity">
-          <p><i class="wi wi-windy"></i> <span class="weekDayWind5"></span> km/s</p>
-          <p><i class="wi wi-humidity"></i> <span class="weekDayHumid5"></span>%</p>
+          <p>Wind Speed:<i class="wi wi-windy"></i> <span class="weekDayWind5"></span> km/s</p>
+          <p>Humidity:<i class="wi wi-humidity"></i> <span class="weekDayHumid5"></span>%</p>
         </div>
       </div>
     </div>
@@ -243,7 +255,7 @@
     <div class="col-7">
       <div class="row">
         <div class="col-12 weekDay">
-          <p class="weekDayName6">Day</p>
+          <p class="weekDayName6 font-weight-bold">Day</p>
         </div>
       </div>
       <div class="row">
@@ -253,14 +265,14 @@
       </div>
       <div class="row">
         <div class="col-12 weekDaySun">
-          <p><i class="wi wi-sunrise"></i> <span class="weekDaySunrise6"></span> AM</p>
-          <p><i class="wi wi-sunset"></i> <span class="weekDaySunset6"></span> PM</p>
+          <p>Sunrise:<i class="wi wi-sunrise"></i> <span class="weekDaySunrise6"></span> AM</p>
+          <p>Sunset:<i class="wi wi-sunset"></i> <span class="weekDaySunset6"></span> PM</p>
         </div>
       </div>
       <div class="row">
         <div class="col weekDayWindnHumidity">
-          <p><i class="wi wi-windy"></i> <span class="weekDayWind6"></span> km/s</p>
-          <p><i class="wi wi-humidity"></i> <span class="weekDayHumid6"></span>%</p>
+          <p>Wind Speed:<i class="wi wi-windy"></i> <span class="weekDayWind6"></span> km/s</p>
+          <p>Humidity:<i class="wi wi-humidity"></i> <span class="weekDayHumid6"></span>%</p>
         </div>
       </div>
 
