@@ -6,8 +6,16 @@
 
 ## Esta app nos muestra en tiempo real el clima y sus demas factores(temperatura,etc) de acuerdo a nuestra ubicación y también nos da el pronóstico del clima de la semana
 
+# Desktop
 ![Responsive-Desktop](public/assets/docs/proceso1.PNG)
+
+![Responsive-Desktop](public/assets/docs/proceso3.PNG)
+
 ![Responsive-Desktop](public/assets/docs/proceso2.PNG)
+### Mobile
+![Responsive-Mobile](public/assets/docs/proceso4.PNG)
+
+![Responsive-Mobile](public/assets/docs/proceso5.PNG)
 
 ## Para este ejercicio usamos como recurso la api de Dark sky.
 
