@@ -16,11 +16,16 @@ h1 {
   color: aliceblue;
   font-weight: 5px;
 }
+
 .weather, .ubication {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 50px 0;
+}
+
+.locName, .currentTemp {
+  font-size: 38px;
 }
 
 .btn-success {
@@ -33,6 +38,10 @@ h1 {
   background-color: rgba(234, 246, 236, 0.6);
   color: rgb(19, 15, 14);
 }
+
+.weekDayName1, .weekDayName2, .weekDayName3, .weekDayName4, .weekDayName5, .weekDayName6 {
+  font-size: 30px;
+}`
 
 footer p {
   color: rgb(16, 18, 19);
