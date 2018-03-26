@@ -1,7 +1,7 @@
 
 let btnUbication = document.querySelector('.btn-week');
 let sectionWeatherUbication = document.querySelector('.justify-content-around');
-// // let btnWeatherWeekend = document.querySelector('.btn-weekend');
+// let btnWeatherWeekend = document.querySelector('.btn-weekend');
 let sectionWeatherWeekend = document.querySelector('#weeklyForecast');
 let btnBack = document.querySelector('.btn-back');
 
